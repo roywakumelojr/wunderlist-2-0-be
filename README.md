@@ -354,6 +354,7 @@ Takes an object:
 
 [
     {
+
         "id": 1,
         
         "title": "Create a marketing page",
@@ -361,8 +362,10 @@ Takes an object:
         "completed": "false",
         
         "created_at": "11-17-2019"
+        
     },
     {
+
         "id": 2,
         
         "title": "Create a react app",
@@ -370,8 +373,10 @@ Takes an object:
         "completed": "false",
         
         "created_at": "11-17-2019"
+
     },
     {
+
         "id": 3,
         
         "title": "Create a Node Api",
@@ -379,6 +384,7 @@ Takes an object:
         "completed": "false",
         
         "created_at": "11-17-2019"
+
     }
 ]
 
@@ -389,6 +395,7 @@ Takes an object:
 **Returns**: A task object with the specified ID number
 
 {
+
     "id": 4,
     
     "title": "Create a marketing page",
@@ -398,6 +405,7 @@ Takes an object:
     "created_at": "11-17-2019",
     
     "user_id": 2
+
 }
 
 ### GET a task by User Id & Search Query
@@ -409,6 +417,7 @@ Takes an object:
 
 [
     {
+
         "id": 2,
         
         "title": "Create a react app",
@@ -416,6 +425,7 @@ Takes an object:
         "completed": "false",
         
         "created_at": "11-17-2019"
+
     }
 ]
 
@@ -431,6 +441,7 @@ Takes an object:
 
 [
     {
+
         "id": 6,
         
         "title": "Create a Node Api",
@@ -438,6 +449,7 @@ Takes an object:
         "completed": "true",
         
         "created_at": "11-17-2019"
+
     }
 ]
 
@@ -448,15 +460,19 @@ Takes an object:
 **POST** to [*** BASE URL COMING SOON! ***/api/todo/users/{userId}/tasks]
 
 Takes an object:
+
 {
+
 	"title": "New to do Item",
 	
     "completed": "false"
+
 }
 
 **Returns**: The created task object
 
 {
+
     "id": 7,
     
     "title": "New to do Item",

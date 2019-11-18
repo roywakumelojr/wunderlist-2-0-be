@@ -31,18 +31,18 @@ WUNDERLIST 2.0 | BE
 | POST    	| /api/auth/login                         	    | Logs in a registered user                             |
 
 | GET     	| /api/users                              	    | Returns all users                                    	|
-| GET     	| /api/users/{userId}                     	    | Returns a user by user id                            	|
-| PUT     	| /api/users/{userId}                     	    | Updates a user                                       	|
-| DELETE  	| /api/users/{userId}                      	    | Deletes a user                                       	|
+| GET     	| /api/users/(userId)                     	    | Returns a user by user id                            	|
+| PUT     	| /api/users/(userId)                     	    | Updates a user                                       	|
+| DELETE  	| /api/users/(userId)                      	    | Deletes a user                                       	|
 
 | GET     	| /api/todo/tasks                       	    | Returns all tasks                     	            |
-| GET     	| /api/todo/users/{userId}/tasks                | Returns a users task(s) by user id               	    |
-| GET     	| /api/todo/tasks/{taskId}               	    | Returns a specific task by task id               	    |
-| GET     	| /api/todo/users/{userId}/search/{searchText}  | Returns a user task that matches the search query     |
-| GET     	| /api/todo/users/{userId}/tasks/{11-17-2019}   | Returns a task by user id and date      	            |
-| POST    	| /api/todo/users/{userId}/tasks             	| Creates a task                          	            |
-| PUT     	| /api/todo/tasks/{taskId}                   	| Updates a task                                    	|
-| DELETE  	| /api/todo/tasks/{taskId}             	        | Deletes a task                                    	|
+| GET     	| /api/todo/users/(userId)/tasks                | Returns a users task(s) by user id               	    |
+| GET     	| /api/todo/tasks/(taskId)               	    | Returns a specific task by task id               	    |
+| GET     	| /api/todo/users/(userId)/search/(searchText)  | Returns a user task that matches the search query     |
+| GET     	| /api/todo/users/(userId)/tasks/(11-17-2019)   | Returns a task by user id and date      	            |
+| POST    	| /api/todo/users/(userId)/tasks             	| Creates a task                          	            |
+| PUT     	| /api/todo/tasks/(taskId)                   	| Updates a task                                    	|
+| DELETE  	| /api/todo/tasks/(taskId)             	        | Deletes a task                                    	|
 
 
 # ENDPOINTS DESCRIPTION

@@ -29,12 +29,10 @@ WUNDERLIST 2.0 | BE
 |---------	|-----------------------------------------------|-------------------------------------------------------|
 | POST    	| /api/auth/register                      	    | Creates a new user                                  	|
 | POST    	| /api/auth/login                         	    | Logs in a registered user                             |
-
 | GET     	| /api/users                              	    | Returns all users                                    	|
 | GET     	| /api/users/(userId)                     	    | Returns a user by user id                            	|
 | PUT     	| /api/users/(userId)                     	    | Updates a user                                       	|
 | DELETE  	| /api/users/(userId)                      	    | Deletes a user                                       	|
-
 | GET     	| /api/todo/tasks                       	    | Returns all tasks                     	            |
 | GET     	| /api/todo/users/(userId)/tasks                | Returns a users task(s) by user id               	    |
 | GET     	| /api/todo/tasks/(taskId)               	    | Returns a specific task by task id               	    |

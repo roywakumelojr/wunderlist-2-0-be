@@ -52,18 +52,24 @@ WUNDERLIST 2.0 | BE
 **POST** to [*** BASE URL COMING SOON! ***/api/auth/register]
 
 Takes an object:
+
 {
+
     "first_name": "lambda",
     "last_name": "student",
     "email": "lambdastudent@lambda.com",
     "password": "test"
+
 }
 
 **Returns**: an object with a welcome message, a user object, and the authorization token
 {
+
     "message": "Welcome lambda!",
 
-    "user": {
+    "user": 
+    
+    {
 
         "id": 4,
 
@@ -74,8 +80,12 @@ Takes an object:
         "email": "lambdastudent@lambda.com",
 
         "password": "$2a$08$phQ8FqrmI0PagiMePyqwZ.N6D9oMlGvgVfd1DUlFLMalGnmwudfqO"
+
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhbWJkYXN0dWRlbnRAbGFtYmRhLmNvbSIsImlkIjo0LCJpYXQiOjE1NzQwMTE1MzIsImV4cCI6MTU3NDA5NzkzMn0.c8aMvncNKs9s2CCE3EcrHlP1x6b_udN5U61tSotTCJc"
+
+    "token": 
+    
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhbWJkYXN0dWRlbnRAbGFtYmRhLmNvbSIsImlkIjo0LCJpYXQiOjE1NzQwMTE1MzIsImV4cCI6MTU3NDA5NzkzMn0.c8aMvncNKs9s2CCE3EcrHlP1x6b_udN5U61tSotTCJc"
 }
 
 ### Login an Existing User
@@ -85,16 +95,21 @@ Takes an object:
 Takes an object:
 
 {
+
     "email": "lambdastudent@lambda.com",
 
     "password": "test"
+
 }
 
 **Returns**: an object with a welcome message, a user object, and the authorization token
 {
+
     "message": "Welcome lambda!",
 
-    "user": {
+    "user": 
+    
+    {
 
         "id": 4,
 
@@ -105,8 +120,13 @@ Takes an object:
         "email": "lambdastudent@lambda.com",
 
         "password": "$2a$08$phQ8FqrmI0PagiMePyqwZ.N6D9oMlGvgVfd1DUlFLMalGnmwudfqO"
+
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhbWJkYXN0dWRlbnRAbGFtYmRhLmNvbSIsImlkIjo0LCJpYXQiOjE1NzQwMTE3ODAsImV4cCI6MTU3NDA5ODE4MH0.XNF6tC2MMe44v9a-Mq0YVbs2DjSGgaR3lOApeNFGJjc"
+
+    "token":
+    
+     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhbWJkYXN0dWRlbnRAbGFtYmRhLmNvbSIsImlkIjo0LCJpYXQiOjE1NzQwMTE3ODAsImV4cCI6MTU3NDA5ODE4MH0.XNF6tC2MMe44v9a-Mq0YVbs2DjSGgaR3lOApeNFGJjc"
+    
 }
 
 ### GET a List of All Users
@@ -116,9 +136,12 @@ Takes an object:
 **Returns**: an array of all the available user objects
 
 {
+
     "users": [
 
+
         {
+
             "id": 1,
 
             "first_name": "javascript",
@@ -128,8 +151,10 @@ Takes an object:
             "email": "javascriptlanguage@lambda.com",
 
             "password": "$2a$08$f3ySAzrNn5CkztRglEiey.exG8A1LlNApSx3uXJ5pHToizAfidxV2"
+
         },
         {
+
             "id": 2,
 
             "first_name": "react",
@@ -139,8 +164,11 @@ Takes an object:
             "email": "reactapp@lambda.com",
 
             "password": "$2a$08$Mp2uSBzGmoWWXeJ5PUoBqu9YAdi6VMDp3DWQ3obMbvp/oekIFyZ9y"
+
         },
+
         {
+
             "id": 3,
 
             "first_name": "html",
@@ -150,8 +178,11 @@ Takes an object:
             "email": "htmlcss@lambda.com",
 
             "password": "$2a$08$NgY5X9LGEjQbD8fmKk4sw.8LbjlXlm2NqVr/MWjxvWsgNSqqijJuS"
+
         },
+
         {
+
             "id": 4,
 
             "first_name": "lambda",
@@ -161,8 +192,11 @@ Takes an object:
             "email": "lambdastudent@lambda.com",
 
             "password": "$2a$08$UcmS8rOO3KO6mHdN.oIaD.TfqloRGcmDkKArMt/ulIA5zhToUkt8u"
+
         }
+
     ]
+
 }
 
 ### GET a User By User Id
@@ -172,6 +206,7 @@ Takes an object:
 **Returns**: A user object with the assigned ID
 
 {
+
     "id": 1,
 
     "first_name": "javascript",
@@ -181,6 +216,7 @@ Takes an object:
     "email": "javascriptlanguage@lambda.com",
 
     "password": "$2a$08$f3ySAzrNn5CkztRglEiey.exG8A1LlNApSx3uXJ5pHToizAfidxV2"
+
 },
 
 ### Update an Existing User
@@ -190,6 +226,7 @@ Takes an object:
 Takes an object:
 
 {
+
     "first_name": "lambda",
 
     "last_name": "studentOne",
@@ -197,11 +234,13 @@ Takes an object:
     "email": "lambdaStudent@lambda.com",
 
     "password": "test"
+
 }
 
 **Returns**: the updated user object
 
 {
+
     "id": 4,
 
     "first_name": "lambda",
@@ -211,6 +250,7 @@ Takes an object:
     "email": "lambdaStudent@lambda.com",
 
     "password": "test"
+
 }
 
 ### DELETE a User
@@ -220,7 +260,9 @@ Takes an object:
 **Returns**: an object with a message
 
 {
+
     "message": "Deleted 1 record(s)."
+
 }
 
 

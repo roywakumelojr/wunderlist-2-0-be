@@ -49,7 +49,7 @@ WUNDERLIST 2.0 | BE
 
 ### Registers a New User
 
-**POST** to [https://wunderlist-2-0-be.herokuapp.com/api/auth/register]
+**POST** to [https://wunderlistbackup.herokuapp.com/api/auth/register]
 
 Takes an object:
 
@@ -90,7 +90,7 @@ Takes an object:
 
 ### Login an Existing User
 
-**POST** to [https://wunderlist-2-0-be.herokuapp.com/api/auth/login]
+**POST** to [https://wunderlistbackup.herokuapp.com/api/auth/login]
 
 Takes an object:
 
@@ -131,7 +131,7 @@ Takes an object:
 
 ### GET a List of All Users
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/users]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/users]
 
 **Returns**: an array of all the available user objects
 
@@ -201,7 +201,7 @@ Takes an object:
 
 ### GET a User By User Id
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/users/{userId}]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/users/{userId}]
 
 **Returns**: A user object with the assigned ID
 
@@ -221,7 +221,7 @@ Takes an object:
 
 ### Update an Existing User
 
-**PUT** to [https://wunderlist-2-0-be.herokuapp.com/api/users/{userId}]
+**PUT** to [https://wunderlistbackup.herokuapp.com/api/users/{userId}]
 
 Takes an object:
 
@@ -255,7 +255,7 @@ Takes an object:
 
 ### DELETE a User
 
-**DELETE** to [https://wunderlist-2-0-be.herokuapp.com/api/users/{userId}]
+**DELETE** to [https://wunderlistbackup.herokuapp.com/api/users/{userId}]
 
 **Returns**: an object with a message
 
@@ -270,7 +270,7 @@ Takes an object:
 
 ### GET all Tasks
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/tasks]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/todo/tasks]
 
 **Returns**: An array of all available task objects
 
@@ -348,7 +348,7 @@ Takes an object:
 
 ### GET a User’s Tasks by User Id
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/users/{userId}/tasks]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/todo/users/{userId}/tasks]
 
 **Returns**: An array of all available task objects for the specified user Id
 
@@ -390,7 +390,7 @@ Takes an object:
 
 ### GET a Task by Task Id
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/tasks/{taskId}]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/todo/tasks/{taskId}]
 
 **Returns**: A task object with the specified ID number
 
@@ -410,7 +410,7 @@ Takes an object:
 
 ### GET a task by User Id & Search Query
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/users/{userId}/search/{searchText}]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/todo/users/{userId}/search/{searchText}]
 
 **Returns**: An array of task objects with the specified search text
 **Example**: The example search query listed below outlines a search result for the word "React" with the user Id of 1.
@@ -431,7 +431,7 @@ Takes an object:
 
 ### GET a Task by User Id & Task Entry Date
 
-**GET** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/users/{userId}/tasks/{11-17-2019}]
+**GET** to [https://wunderlistbackup.herokuapp.com/api/todo/users/{userId}/tasks/{11-17-2019}]
 
 **_*DATE MUST BE IN THE FORMAT MM-DD-YYYY (DASHES INCLUDED)**
 **_*PLEASE USE LEADING ZEROS FOR DAYS/MONTHS 1 – 9**
@@ -457,7 +457,7 @@ Takes an object:
 
 ### Adding a new task
 
-**POST** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/users/{userId}/tasks]
+**POST** to [https://wunderlistbackup.herokuapp.com/api/todo/users/{userId}/tasks]
 
 Takes an object:
 
@@ -486,7 +486,7 @@ Takes an object:
 
 ### Updating a task 
 
-**PUT** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/tasks/{taskId}]
+**PUT** to [https://wunderlistbackup.herokuapp.com/api/todo/tasks/{taskId}]
 **_*Date/created_at is not a required field_**
 Takes an object:
 
@@ -512,7 +512,7 @@ Takes an object:
 
 ### Deleting a task
 
-**DELETE** to [https://wunderlist-2-0-be.herokuapp.com/api/todo/tasks/{taskId}]
+**DELETE** to [https://wunderlistbackup.herokuapp.com/api/todo/tasks/{taskId}]
 **Returns**: An object with the message listed below
 
 {

@@ -30,7 +30,7 @@ exports.up = function(knex) {
         .defaultTo(false)
         .notNullable()      
 
-        tbl.date('created_at').defaultTo(knex.fn.now());
+        tbl.date('created_at').defaultTo(moment().format('ddd, ll'));
         tbl.integer('user_id')
         .unsigned()
         .notNullable()
